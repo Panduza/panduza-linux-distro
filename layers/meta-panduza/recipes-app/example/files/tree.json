@@ -1,0 +1,12 @@
+{
+    "devices": [
+        {
+	    "model": "Ftdi.Ft232h_jtag",
+            "settings": {
+                "jtag_bsdl_folder": "/etc/panduza/BSDL",
+                "jtag_frequency": "6E6",
+                "pins_wanted" : ["PA5","PA10","PC5"]
+    		}
+        }
+    ]
+}
