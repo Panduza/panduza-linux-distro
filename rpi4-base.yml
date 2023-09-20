@@ -77,6 +77,14 @@ local_conf_header:
         linux-firmware-rpidistro-bcm43430 \
         mosquitto \
         git \
+        python3-colorama \
+        python3-paho-mqtt \
+        python3-pyserial \
+        python3-pyudev \
+        python3-pyusb \
+        python3-pyhamcrest \
+        py-ftdi \
+        pymodbus \
     "
   IMAGE_OVERHEAD_FACTOR: |
     IMAGE_OVERHEAD_FACTOR = "2.5"
