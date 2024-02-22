@@ -22,15 +22,3 @@ wpa_passphrase [ ssid ] [ passphrase ]
 ```bash
 reboot
 ```
-### Running the platform :
-
-First of all, we must start by installing all the libraries :
-
-```bash
-pip3 install -r panduza-py/platform/requirements.txt
-```
-
-Then we can run the platform :
-```bash
-python3 panduza-py/platform/panduza_platform/__main__.py
-```
