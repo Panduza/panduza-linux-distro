@@ -5,8 +5,11 @@ distro: poky
 target:
   - core-image-base
 
+
+# List of the layer containers and the layers of the project
 repos:
 
+  # Layer container for poky and its layers used in the project
   poky:
     url: https://git.yoctoproject.org/git/poky
     path: layers/poky
@@ -16,6 +19,7 @@ repos:
       meta-poky:
       meta-yocto-bsp:
 
+  # Layer container for openembeded and its layers used in the project
   meta-openembedded:
     url: http://git.openembedded.org/meta-openembedded
     path: layers/meta-openembedded
@@ -26,11 +30,13 @@ repos:
       meta-networking:
       meta-perl:
 
+  # Layer meta-raspberry
   meta-raspberrypi:
     url: https://git.yoctoproject.org/git/meta-raspberrypi
     path: layers/meta-raspberrypi
     refspec: kirkstone
 
+  # Layer meta-panduza
   meta-panduza:
     path: layers/meta-panduza
 
@@ -67,6 +73,8 @@ local_conf_header:
         wifi \
     "
     INIT_MANAGER = "systemd"
+  
+  # Add the names of the recipes ('your-recipe_v.bb') used in the project to build
   IMAGE_INSTALL_append: |
     IMAGE_INSTALL:append = " \
         python3 \
