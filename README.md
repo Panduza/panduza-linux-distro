@@ -1,6 +1,12 @@
 # panduza-linux-distro
 Linux distribution ready to deploy on some popular boards
 
+To build the image run the command :
+
+```bash
+./kas-container build [your-machine]-base.yml
+```
+
 ### Wifi Connection :
 
 There are two ways to connect to Wifi :
