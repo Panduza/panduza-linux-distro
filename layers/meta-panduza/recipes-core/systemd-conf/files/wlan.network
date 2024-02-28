@@ -3,7 +3,9 @@ Name=wlan*
 KernelCommandLine=!nfsroot
 
 [Network]
-DHCP=v4
+Address=192.168.96.130
+MulticastDNS=yes
+DHCPServer=yes
 
 [DHCPv4]
 UseHostname=false

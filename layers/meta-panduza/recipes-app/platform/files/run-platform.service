@@ -6,6 +6,5 @@ User=root
 ExecStartPre=/usr/bin/pip3 install -r /home/root/panduza-py/platform/requirements.txt
 ExecStart=/usr/bin/python3 /home/root/panduza-py/platform/panduza_platform/__main__.py
 
-
 [Install]
 WantedBy=multi-user.target
